@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta chars<!et="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Pendaftaran Prakerin 2026/2027</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            color: #222;
+        }
+
+        .container {
+            width: 700px;
+            margin-left: 30px;
+        }
+
+        /* HEADER */
+        .header {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
+        }
+
+        .logo {
+            width: 70px;
+            height: 60px;
+            margin-right: 15px;
+        }
+
+        .header h1 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 23px;
+            margin: 0;
+            color: #333;
+        }
+
+        .tagline {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 12px;
+            font-style: italic;
+            margin-top: 8px;
+            color: #555;
+        }
+
+        /* NAVIGATION */
+        .nav {
+            margin-top: 5px;
+            margin-bottom: 28px;
+            font-size: 12px;
+        }
+
+        .nav a {
+            color: #234a91;
+            text-decoration: underline;
+            margin-right: 4px;
+        }
+
+        /* INFORMATION */
+        h2 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 19px;
+            margin: 0 0 14px 0;
+        }
+
+        .info {
+            font-family: Georgia, "Times New Roman", serif; 
+            font-size: 13px;
+            line-height: 1.45;
+            margin-bottom: 20px;
+        }
+
+        .info strong {
+            display: inline-block;
+            width: 120px;
+        }
+
+        /* FORM */
+        .form-title {
+            margin-bottom: 12px;
+        }
+
+        table {
+            width: 550px;
+            border-collapse: collapse;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 13px;
+        }
+
+        th,
+        td {
+            border: 1px solid #777;
+        }
+
+        th {
+            height: 38px;
+            text-align: center;
+            font-size: 14px;
+            background-color: #fafafa;
+        }
+
+        td {
+            padding: 6px 10px;
+        }
+
+        td:first-child {
+            width: 215px;
+        }
+
+        td:nth-child(2) {
+            width: 335px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="tel"],
+        select {
+            width: 150px;
+            height: 23px;
+            border: 1px solid #aaa;
+            padding: 2px 5px;
+            font-size: 12px;
+        }
+
+        select {
+            width: 165px;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .radio-group label {
+            white-space: nowrap;
+        }
+
+        .radio-group input {
+            margin: 0 3px 0 0;
+        }
+
+        .skills {
+            line-height: 19px;
+        }
+
+        .skills label {
+            display: block;
+        }
+
+        .skills input {
+            margin-right: 5px;
+        }
+
+        .agreement {
+            white-space: nowrap;
+        }
+
+        .agreement input {
+            margin-right: 6px;
+        }
+
+        /* BUTTON */
+        .buttons {
+            text-align: center;
+            padding: 7px;
+        }
+
+        button {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            padding: 2px 8px;
+            margin: 0 2px;
+            border: 1px solid #888;
+            background: #eeeeee;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+
+        <img src="dhean.jpg" alt="Logo" class="logo" width="">
+
+        <div>
+            <h1>SISTEM PENDAFTARAN PRAKERIN 2026/2027</h1>
+            <div class="tagline">
+                Learn, Experience, and Grow
+            </div>
+        </div>
+
+    </div>
+
+    <!-- NAVIGATION -->
+    <div class="nav">
+        <a href="#">Beranda</a> |
+        <a href="#">Informasi</a> |
+        <a href="#">Industri</a> |
+        <a href="#">Pendaftaran</a> |
+        <a href="#">Kontak</a>
+    </div>
+
+
+    <!-- INFORMASI PRAKERIN -->
+    <h2>Informasi Prakerin</h2>
+
+    <div>
+        <strong>Periode:</strong>
+        <span>Januari–Maret 2027</span>
+    </div>
+
+    <div>
+        <strong>Peserta:</strong>
+        <span>Siswa Kelas XI</span>
+    </div>
+
+    <div>
+        <strong>Durasi:</strong>
+        <span>3 Bulan</span>
+    </div>
+
+    <div>
+        <strong>Lokasi:</strong>
+        <span>Perusahaan mitra sekolah</span>
+    </div>
+    </div>
+
+
+    <!-- FORMULIR -->
+    <h2 class="form-title">Formulir Pendaftaran</h2>
+
+    <form>
+
+        <table>
+
+            <tr>
+                <th colspan="2">
+                    DATA PESERTA PRAKERIN
+                </th>
+            </tr>
+
+            <tr>
+                <td>Nama Lengkap</td>
+                <td>
+                    <input type="text" name="nama">
+                </td>
+            </tr>
+
+            <tr>
+                <td>NIS</td>
+                <td>
+                    <input type="text" name="nis">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Kelas</td>
+                <td>
+                    <select name="kelas">
+                        <option value="">Pilih Kelas</option>
+                        <option>XI TKJ 1</option>
+                        <option>XI TKJ 2</option>
+                        <option>XI TKJ 3</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Jurusan</td>
+                <td>
+                    <select name="jurusan">
+                        <option value="">Pilih Jurusan</option>
+                        <option>Teknik Komputer Dan Jaringan</option>
+                        <option>Cyber Security</option>
+                        <option>Cloud Computing</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <div class="radio-group">
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="jenis_kelamin"
+                                value="Laki-laki">
+                            Laki-laki
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="jenis_kelamin"
+                                value="Perempuan">
+                            Perempuan
+                        </label>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>
+                    <input type="date" name="tanggal_lahir">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" name="email">
+                </td>
+            </tr>
+
+            <tr>
+                <td>No. WhatsApp</td>
+                <td>
+                    <input type="tel" name="whatsapp">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Bidang Prakerin</td>
+                <td>
+                    <select name="bidang">
+                        <option value="">Pilih Bidang</option>
+                        <option>Networking</option>
+                        <option>Web Development</option>
+                        <option>Database</option>
+                        <option>IT Support</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pilihan Lokasi</td>
+                <td>
+                    <select name="lokasi">
+                        <option value="">Pilih Lokasi</option>
+                        <option>Malang</option>
+                        <option>Surabaya</option>
+                        <option>Jakarta</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Kemampuan yang Dimiliki
+                </td>
+
+                <td>
+                    <div class="skills">
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="skill"
+                                value="HTML">
+                            HTML
+                        </label>
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="skill"
+                                value="CSS">
+                            CSS
+                        </label>
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="skill"
+                                value="JavaScript">
+                            JavaScript
+                        </label>
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="skill"
+                                value="Database">
+                            Database
+                        </label>
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="skill"
+                                value="Networking">
+                            Networking
+                        </label>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Kesediaan Mengikuti Pembekalan
+                </td>
+
+                <td>
+                    <label class="agreement">
+                        <input
+                            type="checkbox"
+                            name="pembekalan">
+                        Saya bersedia mengikuti pembekalan Prakerin.
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="buttons">
+
+                    <button type="submit">
+                        Daftar Prakerin
+                    </button>
+
+                    <button type="reset">
+                        Reset
+                    </button>
+
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</div>
+
+</body>
+</html>
