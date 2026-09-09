@@ -1,0 +1,36 @@
+font-family: Arial, sans-serif;
+    background-color: pink;
+    margin: 30px;
+}
+
+h2 {
+    color: violet;
+}
+
+p {
+    color: #333333;
+}
+
+#judul {
+    text-align: center;
+    color: violet;
+    font-size: 32px;
+}
+
+.biodata {
+    background-color: white;
+    border: 2px solid pink;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.tentang {
+    background-color: white;
+    border: 2px solid pink;
+    padding: 20px;
+}
+
+.motto {
+    font-weight: bold;
+    color: purple;
+}
